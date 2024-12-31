@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Moraxx24</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/jquery.fireworks.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- akhir font -->
+    <link rel="icon" href="src/icon.png">
+    <style>
+        h2 {
+            font-family: 'Lobster', cursive;
+            font-size: 36px;
+            color: #FF5722; /* Warna oranye cerah */
+            text-align: center;
+            margin-top: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Tambahan untuk tata letak form */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .awal h1 {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="awal">
+        <div class="container">
+            <h1>Tahun Baru 2025</h1>
+            <form>
+                <div class="form-group">
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="kalimat">Ucapan</label>
+                    <textarea id="kalimat" name="kalimat" placeholder="Masukkan ucapan" maxlength="180" required></textarea>
+                </div>
+                <button type="submit" id="kirim">Kirim</button>
+                <h2>Alvaroo</h2>
+            </form>
+        </div>
+    </div>
+
+    <div class="bg">
+        <div class="harapan">
+            <p class="ucapan">
+                <span id="penyampai"></span>
+            </p>
+        </div>
+        <div class="heading">
+            <h1>2025</h1>
+            <h2>Selamat Tahun Baru</h2>
+        </div>
+
+        <div class="animasi"></div>
+    </div>
+    <script src="js/script.js"></script>
+    <script>
+        // $(document).ready(function () {
+        //     // Start fireworks immediately on page load
+        //     $(".bg").fireworks();
+        // });
+    </script>
+</body>
+
+</html>

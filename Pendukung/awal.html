@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		.awal {
+			margin: 0;
+			padding: 0;
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: #121212;
+		}
+
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+		.syarat {
+			width: 500px;
+			margin: 0 auto;
+			padding: 30px;
+			background-color: #1e1e1e;
+			border-radius: 15px;
+			box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+		}
+
+		.syarat h1 {
+			text-align: center;
+			font-size: 2.5rem;
+			color: #ffcc00;
+			margin-bottom: 25px;
+			font-weight: 600;
+		}
+
+		.form {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+		}
+
+		label {
+			margin-bottom: -15px;
+			font-size: 1rem;
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+			color: #ffffff;
+		}
+		label:hover {
+			color: #ffcc00;
+			transition: all 0.3s linear;
+		}
+
+		input[type="text"] {
+			padding: 12px;
+			font-size: 1rem;
+			border: 1px solid #444;
+			border-radius: 8px;
+			background-color: #2a2a2a;
+			color: #ffffff;
+			outline: none;
+			transition: border-color 0.3s, box-shadow 0.3s;
+		}
+
+		input[type="text"]:focus {
+			border-color: #ffcc00;
+			box-shadow: 0 0 5px rgba(255, 204, 0, 0.8);
+		}
+
+		input[type="text"]:invalid {
+			border-color: #ff0000;
+			box-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
+		}
+
+		input[type="text"]:required {
+			background-color: #2a2a2a;
+		}
+
+		/* Responsiveness */
+		@media (max-width: 1024px) {
+			.syarat {
+				max-width: 700px;
+				padding: 25px;
+			}
+
+			.syarat h1 {
+				font-size: 2rem;
+			}
+
+			label {
+				font-size: 1rem;
+			}
+
+			input[type="text"] {
+				font-size: 0.95rem;
+			}
+		}
+
+		@media (max-width: 768px) {
+			.syarat {
+				padding: 20px;
+			}
+
+			.syarat h1 {
+				font-size: 1.8rem;
+			}
+
+			label {
+				font-size: 0.95rem;
+			}
+
+			input[type="text"] {
+				font-size: 0.9rem;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.syarat {
+				padding: 15px;
+			}
+
+			.syarat h1 {
+				font-size: 1.5rem;
+			}
+
+			label {
+				font-size: 0.9rem;
+			}
+
+			input[type="text"] {
+				font-size: 0.8rem;
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="awal">
+		<div class="syarat">
+			<h1>Tahun Baru 2025</h1>
+			<div class="form">
+				<label for="nama">Nama
+					
+				</label>
+				<input id="nama" name="nama" type="text" required placeholder="Masukkan nama">
+				<label for="kalimat">
+					Ucapan
+					
+				</label>
+				<input type="text" name="kalimat" id="kalimat" required placeholder="Masukkan ucapan">
+
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
